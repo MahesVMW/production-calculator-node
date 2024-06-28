@@ -1,0 +1,13 @@
+.error{
+    color:red;
+    font-weight: 400;
+    text-align: center;
+    font-size:15px;
+    padding:10px;
+}
+.good{
+    color:green;
+    font-weight: bold;
+    text-align: center;
+    padding:10px;
+}

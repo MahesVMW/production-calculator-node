@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cormorant+Garamond:wght@600&family=Josefin+Slab:wght@700&family=Permanent+Marker&family=Rubik+Doodle+Shadow&family=Rubik+Lines&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Black+Ops+One&family=Cormorant+Garamond:wght@600&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Slab:wght@700&family=Permanent+Marker&family=Rubik+Doodle+Shadow&family=Rubik+Lines&family=Yatra+One&display=swap');
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  
+  button.learn-more {
+    width: 12rem;
+    height: auto;
+  }
+  
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    box-shadow: 0 0 5px 1px white;
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+  }
+  
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+  
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: rgba(10, 133, 204, 0.493);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  button:hover .circle {
+    width: 100%;
+    box-shadow: 0 0 10px 2px white;
+  }
+  
+  button:hover .button-text {
+    transform: translate(-1.7rem, 0);
+  }
+  
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(8.7rem, 0);
+  }
+  
+  button:active .circle .icon.arrow {
+    transform: translate(9.5rem, 0);
+    transition: all 0.3s;
+  }
+  
+  button:active .circle {
+    transform: scale(0.9);
+    transition: all 0.3s;
+    box-shadow: 0 0 5px 0.5px white;
+  }
+  
+  button:hover .button-text {
+    color: #fff;
+  }
+  
+  button:active .button-text {
+    color: rgba(255, 255, 255, 0.459);
+  }
+  
+  /* Text color */
+  p {
+    font-size: 30px;
+    font-family: "Exo 2", sans-serif;
+    color: #020202cb; /* Blue color */
+  }
+  
+  /* Container background color */
+  .homepage {
+    background-color:white;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Heading color */
+  h1, h2, h3, h4, h5, h6 {
+    color: #343a40; /* Dark gray color */
+  }
+  
+.error{
+    color:red;
+    font-weight: 400;
+    text-align: center;
+    font-size:15px;
+    padding:10px;
+}
+.good{
+    color:green;
+    font-weight: bold;
+    text-align: center;
+    padding:10px;
+}
+.acc{
+    font-size:15px;
+}
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #345a68;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #5bbadc;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #010413;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #5bbadc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff; /* Set the text color */
+    text-decoration: none; /* Remove underline */
+}
+
+#sidebar ul li a:hover {
+    background: #0c0d0d; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: white;
+    background: black;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: black;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Adjust table size and make it responsive */
+.table {
+  font-size: 14px; /* Reduce font size for better fit */
+}
+
+/* Adjust padding and border spacing */
+th,
+td {
+  padding: 6px; /* Reduce padding */
+}
+tr:hover{
+  background: #5bbadc;
+}
+/* Make table container responsive */
+.table-responsive {
+  overflow-x: auto; /* Enable horizontal scroll on small screens */
+}
+
+/* Optional: Adjust table header background color */
+.table thead th {
+  background-color: #232121;
+}
